@@ -7,40 +7,50 @@
 
 </head>
 <body>
+    <header>
+        <h3 class="nome">Write.it</h3>
+    </header>
     <div class="container">
         <div class="login-box">
-            <h2>Write.it</h2>
+            <h2 class="nome">Login</h2>
             <form action="#">
                 <div class="input-group">
-                    <label for="email">Email:</label>
+                    <label class="dados"for="email">Email:</label>
                     <input type="email" id="email" name="email" required>
                 </div>
                 <div class="input-group">
-                    <label for="password">Password:</label>
-                    <input type="password" id="password" name="password" required>
+                    <label class="dados" for="password">Password:</label>
+                    <input type="password"  id="password" name="password" required>
+                </div>
+                <div class="links">
+                    <a href="#">Forgot password?</a>
+                    <a href="#">Sign up</a>
                 </div>
                 <button type="submit">Login</button>
             </form>
-            <div class="links">
-                <a href="#">Forgot password?</a>
-                <a href="#">Sign up</a>
-            </div>
+            
         </div>
     </div>
 </body> 
 <style>
+    h3{
+        color: #702C2B;
+    }
+
     body {
     font-family: sans-serif;
     margin: 0;
     padding: 0;
     background-color: #f4f4f4;
-}
+    
+    }
 
-.container {
+    .container {
     display: flex;
     justify-content: center;
     align-items: center;
     height: 100vh;
+    border-color: #702C2B;
 }
 
 .login-box {
@@ -48,15 +58,29 @@
     padding: 20px;
     border-radius: 5px;
     box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+    border: 3px solid #702C2B;
+    border-radius: 25px;
+    width: 650px;
+    height: 500px;
+    align-items: center;
 }
 
 h2 {
     text-align: center;
     margin-bottom: 20px;
+    color:#D3ADAD;
 }
+
+.dados{
+        color: #A09F9F;
+        margin-top: 10%;
+        align-items: center;
+        justify-content: center;
+    }
 
 .input-group {
     margin-bottom: 15px;
+    margin-left: 200px;
 }
 
 label {
@@ -64,12 +88,12 @@ label {
     margin-bottom: 5px;
 }
 
-input[type="text"],
-input[type="password"] {
-    width: 100%;
+input {
+    width: 50%;
     padding: 10px;
     border: 1px solid #ccc;
     border-radius: 3px;
+    align-items: center;
 }
 
 button {
@@ -79,18 +103,17 @@ button {
     border: none;
     border-radius: 3px;
     cursor: pointer;
+    margin-left: 300px;
+    margin-top: 10%;
 }
 
 .links {
     text-align: center;
-    margin-top: 20px;
+    color: #702C2B;
+    
 }
 
-.links a {
-    text-decoration: none;
-    color: #702C2B;
-    margin: 0 5px;
-}
+
 
 </style>
 </html>
