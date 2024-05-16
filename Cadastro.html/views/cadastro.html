@@ -76,22 +76,6 @@
                 });
         });
 
-        function Confirmar(){
-        var senha = provider.txtsenha.value;
-        var conf-senha = provider.txtconf-senha.value;
-
-        if (senha == '' || conf-senha == ''){
-            M.toast({html: 'Campo de senha vazio', classes: 'red'});
-            return false;
-        } else if (senha.length < 8){
-            M.toast({html: 'Insira uma senha com no mínimo 8 caracteres', classes: 'red'});
-            return false;
-        } else if (senha != conf-senha){
-            M.toast({html: 'Senhas não conferem', classes: 'red'});
-            return false;
-        }
-    }
-
     </script>
 
     <style>
